@@ -1,0 +1,31 @@
+name: toy
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # 依赖库
+  get: ^4.6.5 # 状态管理
+  window_manager: ^0.3.5 # 窗口管理
+  shared_preferences: ^2.1.1 # 本地存储
+  lottie: ^2.3.2 # lottie 动画库 https://lottiefiles.com/featured - 暂无使用
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/
+
