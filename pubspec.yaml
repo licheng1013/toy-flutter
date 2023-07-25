@@ -16,6 +16,8 @@ dependencies:
   window_manager: ^0.3.5 # 窗口管理
   shared_preferences: ^2.1.1 # 本地存储
   lottie: ^2.3.2 # lottie 动画库 https://lottiefiles.com/featured - 暂无使用
+  win32: ^5.0.5 # win32 库
+  ffi: ^2.0.2 # ffi 库
 
 dev_dependencies:
   flutter_test:

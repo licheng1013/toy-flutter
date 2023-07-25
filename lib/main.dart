@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:toy/ball/view.dart';
+import 'package:toy/common/win.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
@@ -18,14 +18,10 @@ void main() async {
     skipTaskbar: false,
     title: "",
     titleBarStyle: TitleBarStyle.normal,
-    // alwaysOnTop: true,
+    alwaysOnTop: true,
     // 全屏
-    fullScreen: false,
-    // 最大化
-    // maximumSize: Size(200, 200),
-
+    fullScreen: true,
   );
-
 
 
   windowManager.waitUntilReadyToShow(windowOptions, () async {
@@ -34,7 +30,7 @@ void main() async {
     await  windowManager.setFullScreen(true);
   });
 
-  //windowManager.setIgnoreMouseEvents(true);
+ // windowManager.setIgnoreMouseEvents(true);
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
@@ -45,4 +41,13 @@ void main() async {
     ),
     home: BallPage(),
   ));
+
+
+  //await windowManager.setIgnoreMouseEvents(true);
+  WinUtil.getPoint((x, y) async {
+    print('Current mouse position: $x, $y');
+  });
+
 }
+
+

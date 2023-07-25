@@ -1,19 +1,27 @@
 import 'dart:math';
 
-import 'package:flutter/src/gestures/drag_details.dart';
+
+
+
+import 'package:ffi/ffi.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:toy/common/data.dart';
-import 'package:toy/common/lottie.dart';
+import 'package:toy/common/win.dart';
+import 'package:win32/win32.dart';
+import 'package:window_manager/window_manager.dart';
 
 import 'state.dart';
 
-class BallLogic extends GetxController {
+class BallLogic extends GetxController  {
   final BallState state = BallState();
 
 
   final double leftAndTop = -15;
   // 设置右下边界
   final double rightAndBottom = 75;
+
+
 
 
   void onPanUpdate(DragUpdateDetails details)  async{
@@ -103,7 +111,8 @@ class BallLogic extends GetxController {
   var isShow = false.obs;
 
 
-  // // 特效位置
+
+// // 特效位置
   // var effectX = 0.0.obs;
   // var effectY = 0.0.obs;
   // // 特效是否显示
