@@ -28,7 +28,7 @@ class StrPage extends StatelessWidget {
                 children: [
                   FilledButton(
                     onPressed: () {
-                        state.randomStr();
+                      state.randomStr();
                     },
                     child: const Text('随机生成'),
                   ),
