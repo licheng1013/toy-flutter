@@ -10,7 +10,7 @@ void main() async {
     WidgetsFlutterBinding.ensureInitialized();
     // 必须加上这一行。
     await windowManager.ensureInitialized();
-    const size = Size(1100, 800);
+    const size = Size(1100, 700);
     WindowOptions windowOptions = const WindowOptions(
       minimumSize: size,
       size: size,
