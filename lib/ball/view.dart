@@ -14,6 +14,7 @@ class BallPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onPanUpdate: logic.onPanUpdate,
+      // 传递到下方窗口
       child: Stack(
         children: [
           Obx(() {

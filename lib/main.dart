@@ -9,16 +9,18 @@ void main() async {
   // 必须加上这一行。
   await windowManager.ensureInitialized();
 
+  const size = Size(200, 200);
+
   WindowOptions windowOptions = const WindowOptions(
-    minimumSize: Size(200, 200),
-    size: Size(200, 200),
+    minimumSize: size,
+    size: size,
     center: true,
     // 显示标题栏
     backgroundColor: Colors.transparent,
     skipTaskbar: false,
     title: "",
     titleBarStyle: TitleBarStyle.normal,
-    alwaysOnTop: true,
+    //alwaysOnTop: true,
     // 全屏
     fullScreen: true,
   );
@@ -42,11 +44,6 @@ void main() async {
     home: BallPage(),
   ));
 
-
-  //await windowManager.setIgnoreMouseEvents(true);
-  WinUtil.getPoint((x, y) async {
-    print('Current mouse position: $x, $y');
-  });
 
 }
 
