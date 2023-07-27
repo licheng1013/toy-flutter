@@ -18,6 +18,7 @@ dependencies:
   flutter_animate: ^4.2.0 # 动画库
   crypto: ^3.0.3 # 加密库
   url_launcher: ^6.1.11 # 跳转第三方应用
+  google_fonts: ^4.0.3 # 谷歌字体、- 官方库
 
 
 dev_dependencies:

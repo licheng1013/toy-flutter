@@ -1,12 +1,17 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:toy/ball/view.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:toy/tool/view.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
+  GoogleFonts.config.allowRuntimeFetching = false;
 
-  if( GetPlatform.isDesktop){
+  if (!kIsWeb) {
+    print("执行了吗");
     WidgetsFlutterBinding.ensureInitialized();
     // 必须加上这一行。
     await windowManager.ensureInitialized();
@@ -27,19 +32,15 @@ void main() async {
       await windowManager.focus();
     });
   }
-
+  // 禁止从谷歌加载字体
 
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      fontFamily: 'NotoSansSC',
+      fontFamily: GetPlatform.isWeb ? null : 'NotoSansSC',
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       useMaterial3: true,
     ),
     home: ToolPage(),
   ));
-
-
 }
-
-
