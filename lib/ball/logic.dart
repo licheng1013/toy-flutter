@@ -2,14 +2,9 @@ import 'dart:math';
 
 
 
-
-import 'package:ffi/ffi.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:toy/common/data.dart';
-import 'package:toy/common/win.dart';
-import 'package:win32/win32.dart';
-import 'package:window_manager/window_manager.dart';
 
 import 'state.dart';
 
