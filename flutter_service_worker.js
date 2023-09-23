@@ -12,7 +12,7 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b
 "canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
 "assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
 "assets/assets/lottie/explode.json": "ec2b8c667ab3945c370a090ca4220f0c",
-"assets/assets/lottie/demo.md": "822b7df076bcfda986786e9165e6632c",
+"assets/assets/lottie/demo.md": "2ef0d07b0eb76553feb9f8afe6816748",
 "assets/assets/fonts/NotoSansSC-Regular.otf": "e3ae561f7b8052d9aa9f2b0b09c33ea1",
 "assets/AssetManifest.json": "e6292b1889ab8ac71a464b53375afd07",
 "assets/NOTICES": "7bebdf680e8a9daafc00c79d121da68a",
@@ -30,10 +30,10 @@ const RESOURCES = {"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
-"index.html": "7678fce91eb94ddb747f4b65d836da58",
-"/": "7678fce91eb94ddb747f4b65d836da58",
+"index.html": "5235518d6387d4f093cc7f597f369b6c",
+"/": "5235518d6387d4f093cc7f597f369b6c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "40e10c6db8a278c614c418d6d24df63b",
+"main.dart.js": "803f838a694dcb5c8eda3921b45a30b7",
 "manifest.json": "62e2647daee75245bffd317a9b493335"};
 // The application shell files that are downloaded before a service worker can
 // start.
