@@ -1,0 +1,46 @@
+name: toy
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # 依赖库
+  get: ^4.6.5 # 状态管理
+  window_manager: ^0.3.5 # 窗口管理
+  shared_preferences: ^2.1.1 # 本地存储
+  flutter_animate: ^4.2.0 # 动画库
+  crypto: ^3.0.3 # 加密库
+  url_launcher: ^6.1.11 # 跳转第三方应用
+  google_fonts: ^4.0.3 # 谷歌字体、- 官方库
+  markdown_widget: ^2.2.0 # md文档
+  web_socket_channel: ^2.1.0 # websocket
+  bot_toast: ^4.1.0 # 提示
+  lottie: ^2.7.0  # 动画
+  flutter_adaptive_ui: ^0.8.0+1 # 自适应
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/
+    - assets/lottie/demo.md
+    - assets/happy/
+  fonts:
+    - family: NotoSansSC
+      fonts:
+        - asset: assets/fonts/NotoSansSC-Regular.otf
+
